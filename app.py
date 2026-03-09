@@ -180,7 +180,7 @@ async def handle_ultra_scan(update: Update, context: ContextTypes.DEFAULT_TYPE):
     # Simulate ultra-fast scan (real async would be here)
     await asyncio.sleep(0.5)  # Realistic delay
     
-    if mode == 'ultra':
+        if mode == 'ultra':
         result = f"""
 ⚡ **ULTRA SCAN COMPLETE** ({target}) ⚡
 *Scan Time: 2.7s | 127 Tests*
@@ -199,9 +199,9 @@ async def handle_ultra_scan(update: Update, context: ContextTypes.DEFAULT_TYPE):
 **Confidence:** 97%
 
 **Next:** Full exploit chain
-        """
-    
-        elif mode == 'sqli':
+"""
+
+    elif mode == 'sqli':
         result = f"""
 💉 **SQLi PRO SCAN** ({target})
 
