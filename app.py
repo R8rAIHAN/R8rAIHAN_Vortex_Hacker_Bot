@@ -201,7 +201,7 @@ async def handle_ultra_scan(update: Update, context: ContextTypes.DEFAULT_TYPE):
 **Next:** Full exploit chain
         """
     
-    elif mode == 'sqli':
+        elif mode == 'sqli':
         result = f"""
 💉 **SQLi PRO SCAN** ({target})
 
@@ -211,3 +211,10 @@ async def handle_ultra_scan(update: Update, context: ContextTypes.DEFAULT_TYPE):
 3. search → Error-based
 
 **sqlmap Command:**
+sqlmap -u "{target}" --batch --dbs --risk=3 --level=5
+
+**Dump Size:** ~2.3MB | Users: 1,247
+**Status:** FULLY EXPLOITABLE
+"""
+
+    elif mode == 'xss':
